@@ -67,7 +67,7 @@ img { display: block; max-width: 100%; }
   justify-content : center;
 
   /* Imagen de fondo — el usuario sustituirá esta línea */
-  background      : url('hero.jpg') center/cover no-repeat;
+  background      : url('assets/portada3.jpg') top center/cover no-repeat;
 
   /* Para secciones sin imagen, basta con cambiar background-color */
 }
@@ -84,7 +84,7 @@ img { display: block; max-width: 100%; }
 .hero__overlay {
   position   : absolute;
   inset      : 0;
-  background : rgba(30, 22, 16, 0.45);
+  background : rgba(200, 200, 200, 0.45);
 }
 .hero__overlay--light {
   background : rgba(240, 230, 215, 0.55);
