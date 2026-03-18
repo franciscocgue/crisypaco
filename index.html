@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristina &amp; Paco — Nuestra Boda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 1 — PORTADA
+  ══════════════════════════════════════════════ -->
+  <section class="hero section-fullscreen" id="portada">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">nos casamos</p>
+      <h1 class="hero__title">
+        <span class="name">Cristina</span>
+        <span class="ampersand">&amp;</span>
+        <span class="name">Paco</span>
+      </h1>
+      <div class="hero__divider">
+        <span class="divider-line"></span>
+        <span class="divider-gem">◆</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero__date">Sábado, 19 de septiembre de 2026</p>
+      <p class="hero__place">Finca La Torreta · Alicante</p>
+
+      <!-- Contador -->
+      <div class="countdown" id="countdown">
+        <div class="countdown__block">
+          <span class="countdown__num" id="cd-days">--</span>
+          <span class="countdown__label">días</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__num" id="cd-hours">--</span>
+          <span class="countdown__label">horas</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__num" id="cd-minutes">--</span>
+          <span class="countdown__label">minutos</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__num" id="cd-seconds">--</span>
+          <span class="countdown__label">segundos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-hint__text">scroll</span>
+      <span class="scroll-hint__arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 2 — CEREMONIA
+  ══════════════════════════════════════════════ -->
+  <section class="section-content" id="ceremonia">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Ceremonia</h2>
+      <div class="section-rule">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-place">Iglesia de San Pedro · Cartagena</p>
+      <p class="section-time">12:30 h</p>
+      <div class="map-wrapper">
+        <iframe
+          title="Mapa de la ceremonia"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0!2d-0.9863!3d37.6025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM2JzA5LjAiTiAwwrA1OSczMC43Ilc!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 3 — BANQUETE (fondo imagen opcional)
+  ══════════════════════════════════════════════ -->
+  <section class="section-fullscreen section-bg-color section-alt" id="banquete">
+    <div class="hero__overlay hero__overlay--light"></div>
+    <div class="hero__content">
+      <h2 class="section-title section-title--light">Banquete</h2>
+      <div class="section-rule section-rule--light">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-place section-place--light">Finca La Torreta · Alicante</p>
+      <p class="section-time section-time--light">12:30 h</p>
+      <p class="section-body section-body--light">
+        La celebración tendrá lugar en los jardines de la finca.<br />
+        Aperitivo, comida y baile hasta la madrugada.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 4 — HOTELES
+  ══════════════════════════════════════════════ -->
+  <section class="section-content" id="hoteles">
+    <div class="content-inner">
+      <h2 class="section-title">Alojamiento</h2>
+      <div class="section-rule">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-body">
+        Hemos seleccionado algunos hoteles cercanos para que podáis descansar sin preocupaciones.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <p class="card__tag">Recomendado</p>
+          <h3 class="card__title">Hotel Los Olivos</h3>
+          <p class="card__body">Calle Mayor 12 · Murcia<br />Habitación doble desde 90 €/noche</p>
+          <p class="card__note">Menciona la boda de <em>Cristina &amp; Paco</em> para obtener tarifa especial.</p>
+          <a class="card__link" href="tel:+34968000001">968 000 001</a>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Hotel Rincón del Mar</h3>
+          <p class="card__body">Avda. del Puerto 5 · Cartagena<br />Habitación doble desde 75 €/noche</p>
+          <p class="card__note">A 10 minutos en coche de la finca.</p>
+          <a class="card__link" href="tel:+34968000002">968 000 002</a>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Hotel Murcia Centro</h3>
+          <p class="card__body">Plaza de la Catedral 3 · Murcia<br />Habitación doble desde 85 €/noche</p>
+          <p class="card__note">Servicio de taxi a la finca disponible.</p>
+          <a class="card__link" href="tel:+34968000003">968 000 003</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 5 — AUTOBÚS
+  ══════════════════════════════════════════════ -->
+  <section class="section-content section-content--tinted" id="autobus">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Autobús</h2>
+      <div class="section-rule">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-body">
+        Hemos organizado autobús de ida y vuelta para que podáis disfrutar sin preocuparos del coche.
+      </p>
+      <div class="bus-schedule">
+        <div class="bus-row">
+          <span class="bus-label">Ida</span>
+          <span class="bus-detail">Plaza de España (Murcia) → Finca La Torreta</span>
+          <span class="bus-time">11:30 h</span>
+        </div>
+        <div class="bus-row bus-row--alt">
+          <span class="bus-label">Vuelta 1ª</span>
+          <span class="bus-detail">Finca La Torreta → Plaza de España (Murcia)</span>
+          <span class="bus-time">01:00 h</span>
+        </div>
+        <div class="bus-row">
+          <span class="bus-label">Vuelta 2ª</span>
+          <span class="bus-detail">Finca La Torreta → Plaza de España (Murcia)</span>
+          <span class="bus-time">04:00 h</span>
+        </div>
+      </div>
+      <p class="section-note">Por favor, confirmad vuestra asistencia al autobús antes del 1 de junio.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 6 — DRESS CODE
+  ══════════════════════════════════════════════ -->
+  <section class="section-fullscreen section-bg-color section-bg-dark" id="dresscode">
+    <div class="hero__overlay hero__overlay--dark"></div>
+    <div class="hero__content">
+      <h2 class="section-title section-title--light">Dress Code</h2>
+      <div class="section-rule section-rule--light">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-body section-body--light section-body--large">
+        Elegante · Semiformal
+      </p>
+      <p class="section-body section-body--light">
+        Os pedimos que evitéis el blanco, el negro riguroso y el rojo.<br />
+        ¡Vestíos de gala y venid a brillar con nosotros!
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 7 — LISTA DE BODAS / REGALOS
+  ══════════════════════════════════════════════ -->
+  <section class="section-content" id="regalos">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Lista de Bodas</h2>
+      <div class="section-rule">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-body">
+        Vuestra presencia es el mejor regalo. Pero si queréis contribuir a nuestros sueños, 
+        hemos preparado una lista en El Corte Inglés y también podéis hacer una aportación 
+        a nuestra luna de miel.
+      </p>
+      <div class="gift-options">
+        <div class="gift-option">
+          <span class="gift-icon">🛍</span>
+          <h3 class="gift-title">Lista en El Corte Inglés</h3>
+          <p class="gift-desc">Código de lista: <strong>12345678</strong></p>
+          <a class="btn" href="https://www.elcorteingles.es/lista-de-bodas" target="_blank" rel="noopener">Ver lista</a>
+        </div>
+        <div class="gift-option">
+          <span class="gift-icon">✈</span>
+          <h3 class="gift-title">Luna de Miel</h3>
+          <p class="gift-desc">Bizum o transferencia al número / cuenta que os facilitaremos.</p>
+          <a class="btn" href="mailto:franciscocguerrero@gmail.com">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECCIÓN 8 — CONFIRMACIÓN / CONTACTO
+  ══════════════════════════════════════════════ -->
+  <section class="section-content section-content--tinted" id="confirmacion">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Confirma tu asistencia</h2>
+      <div class="section-rule">
+        <span class="rule-line"></span>
+        <span class="rule-gem">◆</span>
+        <span class="rule-line"></span>
+      </div>
+      <p class="section-body">
+        Por favor, confirma tu asistencia antes del <strong>1 de mayo de 2025</strong>.<br />
+        Escríbenos o llámanos directamente:
+      </p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <p class="contact-name">Cristina</p>
+          <a class="contact-link" href="tel:+34600000001">600 000 001</a>
+          <a class="contact-link" href="https://wa.me/34600000001" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="contact-divider">◆</div>
+        <div class="contact-item">
+          <p class="contact-name">Paco</p>
+          <a class="contact-link" href="tel:+34600000002">600 000 002</a>
+          <a class="contact-link" href="https://wa.me/34600000002" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <p class="section-note">También podéis escribirnos a <a class="inline-link" href="mailto:franciscocguerrero@gmail.com">franciscocguerrero@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-names">Cristina &amp; Paco</p>
+      <p class="footer-date">19 · 09 · 2026</p>
+      <p class="footer-love">Con todo nuestro amor ♡</p>
+    </div>
+  </footer>
+
+  <script src="countdown.js"></script>
+  <script>
+    // ── Countdown ────────────────────────────────────────────
+    // Cambia esta fecha a la fecha real de la boda
+    const weddingDate = new Date('2026-09-19T12:30:00');
+
+    function updateCountdown() {
+      const now  = new Date();
+      const diff = weddingDate - now;
+      if (diff <= 0) {
+        document.getElementById('countdown').innerHTML = '<p class="countdown__done">¡Hoy es el gran día! 🥂</p>';
+        return;
+      }
+
+      const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / (1000));
+
+      document.getElementById('cd-days').textContent    = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent   = String(hours).padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── Scroll reveal ────────────────────────────────────────
+    const revealEls = document.querySelectorAll(
+      '.section-title, .section-rule, .section-place, .section-time, .section-body, .card, .bus-row, .gift-option, .contact-item, .map-wrapper'
+    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
