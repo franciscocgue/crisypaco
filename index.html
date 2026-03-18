@@ -11,6 +11,24 @@
 </head>
 <body>
 
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#portada">N &amp; N</a>
+      <button class="nav-burger" id="nav-burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#ceremonia">Ceremonia</a></li>
+        <li><a href="#banquete">Banquete</a></li>
+        <li><a href="#hoteles">Hoteles</a></li>
+        <li><a href="#autobus">Autobús</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
+        <li><a href="#regalos">Regalos</a></li>
+        <li><a href="#confirmacion">Confirmar</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- ══════════════════════════════════════════════
        SECCIÓN 1 — PORTADA
   ══════════════════════════════════════════════ -->
@@ -278,7 +296,28 @@
     </div>
   </footer>
 
-  <script src="countdown.js"></script>
+  <script>
+    // ── Burger menu (móvil) ──────────────────────────────────
+    const burger = document.getElementById('nav-burger');
+    const links  = document.getElementById('nav-links');
+    burger.addEventListener('click', () => {
+      links.classList.toggle('nav-links--open');
+      burger.classList.toggle('nav-burger--open');
+    });
+    // Cierra el menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('nav-links--open');
+        burger.classList.remove('nav-burger--open');
+      });
+    });
+
+    // ── Fondo del nav al hacer scroll ───────────────────────
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+  </script>
   <script>
     // ── Countdown ────────────────────────────────────────────
     // Cambia esta fecha a la fecha real de la boda
