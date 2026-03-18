@@ -59,6 +59,7 @@ img { display: block; max-width: 100%; }
 /* Sección full-screen (portada, banquete, dresscode) */
 .section-fullscreen {
   position        : relative;
+  z-index         : 0; 
   min-height      : 100svh;
   display         : flex;
   flex-direction  : column;
@@ -712,20 +713,19 @@ img { display: block; max-width: 100%; }
    ════════════════════════════════════════════════════════════ */
 
 .site-nav {
-  position       : fixed;
-  top            : 0;
-  left           : 0;
-  right          : 0;
-  z-index        : 100;
-  padding        : 1.2rem 1.5rem;
-  transition     : background 0.35s ease, padding 0.35s ease;
+  position   : fixed;
+  top        : 0;
+  left       : 0;
+  right      : 0;
+  z-index    : 1000;
+  transition : background 0.35s ease, padding 0.35s ease;
+  padding    : 1.2rem 1.5rem;
 }
 
-/* Fondo al hacer scroll */
 .nav--scrolled {
-  background : rgba(42, 36, 32, 0.92);
+  background     : rgba(42, 36, 32, 0.92);
   backdrop-filter: blur(8px);
-  padding    : 0.75rem 1.5rem;
+  padding        : 0.75rem 1.5rem;
 }
 
 .nav-inner {
@@ -734,6 +734,7 @@ img { display: block; max-width: 100%; }
   display         : flex;
   align-items     : center;
   justify-content : space-between;
+  flex-wrap       : wrap;
 }
 
 .nav-logo {
@@ -742,14 +743,13 @@ img { display: block; max-width: 100%; }
   font-size      : 1.3rem;
   color          : #fff;
   letter-spacing : 0.05em;
-  flex-shrink    : 0;
 }
 
 .nav-links {
-  list-style      : none;
-  display         : flex;
-  align-items     : center;
-  gap             : 2rem;
+  list-style : none;
+  display    : flex;
+  align-items: center;
+  gap        : 2rem;
 }
 
 .nav-links a {
@@ -762,7 +762,7 @@ img { display: block; max-width: 100%; }
 }
 .nav-links a:hover { color: var(--color-gold-light); }
 
-/* ── Burger (solo móvil) ─────────────────────────────────── */
+/* ── Burger ──────────────────────────────────────────────── */
 .nav-burger {
   display        : none;
   flex-direction : column;
@@ -782,42 +782,33 @@ img { display: block; max-width: 100%; }
   transform-origin : center;
 }
 
-/* Animación burger → X */
 .nav-burger--open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .nav-burger--open span:nth-child(2) { opacity: 0; }
 .nav-burger--open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-/* ── Móvil ───────────────────────────────────────────────── */
+/* ── Mobile ──────────────────────────────────────────────── */
 @media (max-width: 700px) {
   .nav-burger { display: flex; }
 
+  .site-nav {
+    background : rgba(42, 36, 32, 0.97);
+  }
+
   .nav-links {
-    display        : flex;
+    display        : none;
     flex-direction : column;
     align-items    : center;
-    gap            : 0;
-    position       : fixed;
-    top            : 0;
-    left           : 0;
-    right          : 0;
-    bottom         : 0;
-    background     : rgba(42, 36, 32, 0.97);
-    justify-content: center;
-    gap            : 1.8rem;
-
-    /* Oculto por defecto */
-    opacity        : 0;
-    pointer-events : none;
-    transition     : opacity 0.3s ease;
+    gap            : 1.6rem;
+    width          : 100%;
+    padding        : 2rem 0 2.5rem;
   }
 
   .nav-links--open {
-    opacity        : 1;
-    pointer-events : auto;
+    display : flex;
   }
 
   .nav-links a {
-    font-size  : 0.85rem;
-    color      : rgba(255,255,255,0.9);
+    font-size : 0.9rem;
+    color     : rgba(255,255,255,0.9);
   }
 }
