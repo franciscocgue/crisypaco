@@ -21,7 +21,7 @@
   /* Paleta */
   --color-cream      : #f9f5f0;
   --color-sand       : #e8ddd0;
-  --color-gold       : #b89b6a;
+  --color-gold       : #866938;
   --color-gold-light : #d4b896;
   --color-dark       : #2a2420;
   --color-mid        : #5a4e44;
@@ -65,11 +65,25 @@ img { display: block; max-width: 100%; }
   flex-direction  : column;
   align-items     : center;
   justify-content : center;
+  overflow        : hidden;
 
   /* Imagen de fondo — el usuario sustituirá esta línea */
-  background      : url('assets/portada3.jpg') top center/cover no-repeat;
+  /* background      : url('assets/portada3.jpg') top center/cover no-repeat; */
 
   /* Para secciones sin imagen, basta con cambiar background-color */
+}
+
+.hero__bg {
+  position   : absolute;
+  inset      : -15%;
+  z-index    : -1;
+  background : url('assets/portada3.jpg') top center/cover no-repeat;
+  will-change: transform;
+}
+
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08) translate(-1%, -1%); }
 }
 
 /* Sección de color alternativa (sin imagen) */
@@ -84,7 +98,7 @@ img { display: block; max-width: 100%; }
 .hero__overlay {
   position   : absolute;
   inset      : 0;
-  background : rgba(200, 200, 200, 0.45);
+  background : rgba(55, 55, 55, 0.55);
 }
 .hero__overlay--light {
   background : rgba(240, 230, 215, 0.55);
@@ -101,6 +115,10 @@ img { display: block; max-width: 100%; }
   padding         : var(--section-pad-v) var(--section-pad-h);
   width           : 100%;
   max-width       : var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Sección de contenido normal */
@@ -167,6 +185,7 @@ img { display: block; max-width: 100%; }
   gap             : 0.8rem;
   margin          : 1.8rem auto 1.4rem;
   max-width       : 240px;
+  width       : 240px;
 }
 
 .divider-line {
@@ -188,6 +207,9 @@ img { display: block; max-width: 100%; }
   color          : #fff;
   letter-spacing : 0.03em;
   margin-bottom  : 0.35rem;
+  /* background-color: rgba(20, 14, 10, 0.45);
+  border-radius: 7px;
+  padding: 0.1rem 0.3rem; */
 }
 
 .hero__place {
@@ -197,6 +219,10 @@ img { display: block; max-width: 100%; }
   text-transform : uppercase;
   color          : var(--color-gold-light);
   margin-bottom  : 2.8rem;
+  /* background-color: rgb(17, 12, 9);
+  border-radius: 0px;
+  width: fit-content;
+  padding: 0.1rem 0.3rem; */
 }
 
 /* Contador */
@@ -259,6 +285,8 @@ img { display: block; max-width: 100%; }
   gap             : 0.2rem;
   color           : rgba(255,255,255,0.55);
   animation       : bounce 2.2s ease-in-out infinite;
+  transition      : opacity 0.4s ease;
+  pointer-events  : none;
 }
 
 .scroll-hint__text {
@@ -269,12 +297,17 @@ img { display: block; max-width: 100%; }
 }
 
 .scroll-hint__arrow {
-  font-size : 1.1rem;
+  font-size : 1.5rem;
+  font-weight: bold;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.55; }
-  50%       { transform: translateX(-50%) translateY(7px); opacity: 0.9; }
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.3; }
+  50%       { transform: translateX(-50%) translateY(7px); opacity: 0.7; }
+}
+
+.scroll-hint--hidden {
+  opacity    : 0 !important;
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -326,6 +359,7 @@ img { display: block; max-width: 100%; }
   color          : var(--color-mid);
   text-align     : center;
   margin-bottom  : 0.3rem;
+  display: block;
 }
 .section-place--light { color: var(--color-light-text); }
 
@@ -389,6 +423,10 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 600px) {
   .map-wrapper iframe { height: 260px; }
+}
+
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
+  .map-wrapper iframe { height: 180px; }
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -463,6 +501,16 @@ img { display: block; max-width: 100%; }
   transition     : color 0.2s;
 }
 .card__link:hover { color: var(--color-gold); }
+
+.cards--single {
+  grid-template-columns : minmax(240px, 420px);
+  justify-content       : center;
+}
+
+.section-body--group-label {
+  margin-bottom : 0;
+  text-align    : CENTER;
+}
 
 /* ════════════════════════════════════════════════════════════
    BUS SCHEDULE
@@ -811,4 +859,29 @@ img { display: block; max-width: 100%; }
     font-size : 0.9rem;
     color     : rgba(255,255,255,0.9);
   }
+}
+
+/* Adjust cover image for desktop or landscape */
+@media (min-width: 701px) and (orientation: landscape) and (min-height: 500px) {
+  .hero__bg {
+    background-image: url('assets/portada3_desktop.jpg');
+  }
+}
+
+
+.copy-code {
+  cursor         : pointer;
+  border-bottom  : 1px dashed var(--color-gold-light);
+  color          : var(--color-gold);
+  transition     : opacity 0.2s;
+  white-space    : nowrap;
+}
+.copy-code:hover { opacity: 0.7; }
+
+.copy-icon {
+  width          : 0.8em;
+  height         : 0.8em;
+  vertical-align : -0.1em;
+  margin-left    : 0.3em;
+  opacity        : 0.7;
 }

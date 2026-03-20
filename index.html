@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,11 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
   <nav class="site-nav" id="site-nav">
@@ -33,6 +37,7 @@
        SECCIÓN 1 — PORTADA
   ══════════════════════════════════════════════ -->
   <section class="hero section-fullscreen" id="portada">
+    <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <p class="hero__eyebrow">nos casamos</p>
@@ -74,7 +79,7 @@
     </div>
 
     <div class="scroll-hint" aria-hidden="true">
-      <span class="scroll-hint__text">scroll</span>
+      <!-- <span class="scroll-hint__text">continúa</span> -->
       <span class="scroll-hint__arrow">↓</span>
     </div>
   </section>
@@ -82,7 +87,7 @@
   <!-- ══════════════════════════════════════════════
        SECCIÓN 2 — CEREMONIA
   ══════════════════════════════════════════════ -->
-  <section class="section-content" id="ceremonia">
+  <section class="section-content section-fullscreen" id="ceremonia">
     <div class="content-inner content-inner--narrow">
       <h2 class="section-title">Ceremonia</h2>
       <div class="section-rule">
@@ -90,16 +95,20 @@
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
       </div>
-      <p class="section-place">Iglesia de San Pedro · Cartagena</p>
+      <a class="section-place" target="_blank"
+        href="https://www.google.com/maps/place/Parroquia+Nuestra+Se%C3%B1ora+de+Gracia/@38.344835,-0.508186,6991m/data=!3m1!1e3!4m6!3m5!1s0xd6237b2d160d3a9:0x9dbab7f96ea27013!8m2!3d38.3448031!4d-0.4876294!16s%2Fg%2F1n3dw0cx8?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D">
+        Iglesia de Nuestra Señora de Gracia · Alicante <svg
+          style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10" fill="none"
+          stroke="currentColor" stroke-width="1.2">
+          <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+        </svg>
+      </a>
       <p class="section-time">12:30 h</p>
       <div class="map-wrapper">
         <iframe
-          title="Mapa de la ceremonia"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0!2d-0.9863!3d37.6025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM2JzA5LjAiTiAwwrA1OSczMC43Ilc!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30444.305637463203!2d-0.508186!3d38.344835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237b2d160d3a9%3A0x9dbab7f96ea27013!2sParroquia%20Nuestra%20Se%C3%B1ora%20de%20Gracia!5e1!3m2!1ses!2ses!4v1774015229542!5m2!1ses!2ses"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -107,20 +116,32 @@
   <!-- ══════════════════════════════════════════════
        SECCIÓN 3 — BANQUETE (fondo imagen opcional)
   ══════════════════════════════════════════════ -->
-  <section class="section-fullscreen section-bg-color section-alt" id="banquete">
-    <div class="hero__overlay hero__overlay--light"></div>
-    <div class="hero__content">
-      <h2 class="section-title section-title--light">Banquete</h2>
-      <div class="section-rule section-rule--light">
+  <section class="section-content--tinted section-fullscreen section-bg-color section-alt" id="banquete">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Banquete</h2>
+      <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
       </div>
-      <p class="section-place section-place--light">Finca La Torreta · Alicante</p>
-      <p class="section-time section-time--light">12:30 h</p>
-      <p class="section-body section-body--light">
-        La celebración tendrá lugar en los jardines de la finca.<br />
-        Aperitivo, comida y baile hasta la madrugada.
+      <a class="section-place" target="_blank"
+        href="https://www.google.com/maps/place/Finca+La+Torreta/@38.3933006,-0.4265246,873m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd62398f19227e13:0x2501be7b996de1b2!8m2!3d38.3933006!4d-0.4239443!16s%2Fg%2F11b61q1y0q?hl=es&entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D">
+        Finca La Torreta · Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7"
+          viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+        </svg>
+      </a>
+      <p class="section-time">14:30 h</p>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.9905038613742!2d-0.42652458788535447!3d38.39330057171864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62398f19227e13%3A0x2501be7b996de1b2!2sFinca%20La%20Torreta!5e1!3m2!1ses!2ses!4v1774030113473!5m2!1ses!2ses"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="section-body section-body" style="margin-top: 2rem;">
+        La celebración tendrá lugar en los jardines de la finca.
+        <br />
+        💃 Aperitivo, comida y baile hasta la madrugada 🕺
       </p>
     </div>
   </section>
@@ -136,28 +157,106 @@
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
       </div>
-      <p class="section-body">
-        Hemos seleccionado algunos hoteles cercanos para que podáis descansar sin preocupaciones.
+
+      <p class="section-body section-body--group-label">
+        Centro de Alicante, <b>cerca de la Iglesia</b>:
       </p>
+
       <div class="cards">
         <div class="card">
-          <p class="card__tag">Recomendado</p>
-          <h3 class="card__title">Hotel Los Olivos</h3>
-          <p class="card__body">Calle Mayor 12 · Murcia<br />Habitación doble desde 90 €/noche</p>
-          <p class="card__note">Menciona la boda de <em>Cristina &amp; Paco</em> para obtener tarifa especial.</p>
-          <a class="card__link" href="tel:+34968000001">968 000 001</a>
+          <!-- <p class="card__tag">Recomendado</p> -->
+          <h3 class="card__title">
+            <a target="_blank"
+              href="https://www.bypillow.com/bookingstep1/?chainSelectorValue=50469&checkin=18%2F09%2F2026&hotelIds=100379023&idchain=501261&clientCode=CRISTINA%26FRANCISCO&hsri=02080&lang=en&nights=2&parties=W3siYWR1bHRzIjoyLCJjaGlsZHJlbiI6W119XQ%3D%3D&type=chain&step=1&home=https%3A%2F%2Fwww.bypillow.com%2F&currency=EUR&urlParams=%5Bobject+Object%5D">Hotel
+              BYPILLOW Paseo <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a>
+          </h3>
+          <p class="card__body"><a target="_blank" href="https://maps.app.goo.gl/X9cBXf3iLxAhGsr98">📍Calle Marqués de
+              Molins, 63
+              · Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a></p>
+          <p class="card__note">Código descuento
+            <span class="copy-code"
+              onclick="navigator.clipboard.writeText('CRISTINA&FRANCISCO').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = 'CRISTINA&FRANCISCO', 2000) })">
+              CRISTINA&FRANCISCO
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="9" y="9" width="13" height="13" rx="1" />
+                <path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1" />
+              </svg>
+            </span>
+            <br>🚶‍➡️→ ⛪ 10 minutos
+          </p>
+          <a class="card__link" href="tel:+34965168181">965 16 81 81</a>
         </div>
         <div class="card">
-          <h3 class="card__title">Hotel Rincón del Mar</h3>
-          <p class="card__body">Avda. del Puerto 5 · Cartagena<br />Habitación doble desde 75 €/noche</p>
-          <p class="card__note">A 10 minutos en coche de la finca.</p>
-          <a class="card__link" href="tel:+34968000002">968 000 002</a>
+          <!-- <p class="card__tag">Recomendado</p> -->
+          <h3 class="card__title">
+            <a target="_blank"
+              href="https://reservation.barcelo.com/?bep=CERES&hotel=29681&arrive=2026-09-18&depart=2026-09-20&rooms=1&store=es-es&theme=initialTheme&adult=2&marketprice=EUR&country=es&marketcampaign=ES&locale=es-es&currency=EUR&category=urban&be_redirect=ceres&usercurrency=EUR">Hotel Occidental Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a>
+          </h3>
+          <p class="card__body"><a target="_blank" href="https://maps.app.goo.gl/7tSo4BsmpJEpfvwV6">📍Calle Tomás López Torregrosa, 7-9 · Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a></p>
+          <p class="card__note">Código descuento
+            <span class="copy-code"
+              onclick="navigator.clipboard.writeText('@TODO_NEED_CODE').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = '@TODO_NEED_CODE', 2000) })">
+              @TODO_NEED_CODE
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="9" y="9" width="13" height="13" rx="1" />
+                <path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1" />
+              </svg>
+            </span>
+            <br>🚶‍➡️→ ⛪ 7 minutos
+          </p>
+          <a class="card__link" href="tel:+34965271588">965 27 15 88</a>
         </div>
+      </div>
+
+      <p class="section-body section-body--group-label" style="margin-top: 1rem;"><a target="_blank" href="https://maps.app.goo.gl/QFgtZrzgi4N1VDwq7">¡Más opciones! <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a></p>
+
+      <p class="section-body section-body--group-label" style="margin-top: 3.5rem;">
+        Cerca de la <b>playa de San Juan</b> de Alicante:<br>
+      </p>
+      <div class="cards cards--single">
         <div class="card">
-          <h3 class="card__title">Hotel Murcia Centro</h3>
-          <p class="card__body">Plaza de la Catedral 3 · Murcia<br />Habitación doble desde 85 €/noche</p>
-          <p class="card__note">Servicio de taxi a la finca disponible.</p>
-          <a class="card__link" href="tel:+34968000003">968 000 003</a>
+          <!-- <p class="card__tag">Recomendado</p> -->
+          <h3 class="card__title">
+            <a target="_blank"
+              href="https://castillaalicante.orbook.es/?e=2026-09-18&s=2026-09-20&h=hotelcastilla&a=2&n=0&b=0&l=es&m=eur&c=false&attr_content=embed_widget&attr_medium=search_widget&attr_source=web">Hotel Castilla Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a>
+          </h3>
+          <p class="card__body"><a target="_blank" href="https://maps.app.goo.gl/1dfmrpgj7TAVEntc6">📍Av. Países Escandinavos, 7 · Alicante <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+                fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
+              </svg></a></p>
+          <p class="card__note">
+            <!-- Código descuento
+            <span class="copy-code"
+              onclick="navigator.clipboard.writeText('@TODO_NEED_CODE').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = '@TODO_NEED_CODE', 2000) })">
+              @TODO_NEED_CODE
+              <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="9" y="9" width="13" height="13" rx="1" />
+                <path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1" />
+              </svg>
+            </span>
+            <br> -->
+            🚶‍➡️→ 🏖️ 4 minutos</br>
+            <b>⚠️<u>Importante</u></b>: se necesita 🚗 para ir a la Iglesia
+          </p>
+          <a class="card__link" href="tel:+34965162033">965 16 20 33</a>
         </div>
       </div>
     </div>
@@ -199,23 +298,23 @@
   </section>
 
   <!-- ══════════════════════════════════════════════
-       SECCIÓN 6 — DRESS CODE
+       SECCIÓN 6 — GUARDERÍA
   ══════════════════════════════════════════════ -->
-  <section class="section-fullscreen section-bg-color section-bg-dark" id="dresscode">
-    <div class="hero__overlay hero__overlay--dark"></div>
-    <div class="hero__content">
-      <h2 class="section-title section-title--light">Dress Code</h2>
-      <div class="section-rule section-rule--light">
+  <section class="section-content section-fullscreen" id="dresscode">
+    <div class="content-inner content-inner--narrow">
+      <h2 class="section-title">Guardería</h2>
+      <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
       </div>
-      <p class="section-body section-body--light section-body--large">
-        Elegante · Semiformal
+      <p class="section-body section-body--large">
+        ¡Nos encantan los niños! Y también están invitados
       </p>
-      <p class="section-body section-body--light">
-        Os pedimos que evitéis el blanco, el negro riguroso y el rojo.<br />
-        ¡Vestíos de gala y venid a brillar con nosotros!
+      <p class="section-body">
+        Dispondremos de servicio de guardería para que puedan estar atendidos y entretenidos durante la
+        celebración<br />
+
       </p>
     </div>
   </section>
@@ -232,10 +331,12 @@
         <span class="rule-line"></span>
       </div>
       <p class="section-body">
-        Vuestra presencia es el mejor regalo. Pero si queréis contribuir a nuestros sueños, 
-        hemos preparado una lista en El Corte Inglés y también podéis hacer una aportación 
-        a nuestra luna de miel.
-      </p>
+        Vuestra presencia es el mejor regalo. Pero si queréis contribuir a nuestro futuro juntos,
+        os facilitamos nuestras cuentas bancarias;
+
+      </p> 
+      ES \ Francisco Solano Carmona Guerrero
+      ES \ Cristina Serrano Román
       <div class="gift-options">
         <div class="gift-option">
           <span class="gift-icon">🛍</span>
@@ -265,8 +366,9 @@
         <span class="rule-line"></span>
       </div>
       <p class="section-body">
-        Por favor, confirma tu asistencia antes del <strong>1 de mayo de 2025</strong>.<br />
-        Escríbenos o llámanos directamente:
+        ¡Nos encantará veros en nuestra boda! Por favor, confirmad vuestra asistencia en el siguiente link
+        <strong> link formulario </strong>.<br />
+
       </p>
       <div class="contact-grid">
         <div class="contact-item">
@@ -281,7 +383,8 @@
           <a class="contact-link" href="https://wa.me/34600000002" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
-      <p class="section-note">También podéis escribirnos a <a class="inline-link" href="mailto:franciscocguerrero@gmail.com">franciscocguerrero@gmail.com</a></p>
+      <p class="section-note">También podéis escribirnos a <a class="inline-link"
+          href="mailto:franciscocguerrero@gmail.com">franciscocguerrero@gmail.com</a></p>
     </div>
   </section>
 
@@ -292,79 +395,10 @@
     <div class="footer-inner">
       <p class="footer-names">Cristina &amp; Paco</p>
       <p class="footer-date">19 · 09 · 2026</p>
-      <p class="footer-love">Con todo nuestro amor ♡</p>
+      <p class="footer-love">♡</p>
     </div>
   </footer>
-
-  <script>
-    // ── Burger menu ──────────────────────────────────────────
-    const burger = document.getElementById('nav-burger');
-    const links  = document.getElementById('nav-links');
-
-    burger.addEventListener('click', () => {
-      const isOpening = !links.classList.contains('nav-links--open');
-      links.classList.toggle('nav-links--open');
-      burger.classList.toggle('nav-burger--open');
-      // Scroll to top when opening so menu is always fully visible
-      if (isOpening) window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Close menu when a link is tapped
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => {
-        links.classList.remove('nav-links--open');
-        burger.classList.remove('nav-burger--open');
-      });
-    });
-
-    // ── Nav background on scroll ─────────────────────────────
-    const nav = document.getElementById('site-nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('nav--scrolled', window.scrollY > 60);
-    });
-  </script>
-  <script>
-    // ── Countdown ────────────────────────────────────────────
-    // Cambia esta fecha a la fecha real de la boda
-    const weddingDate = new Date('2026-09-19T12:30:00');
-
-    function updateCountdown() {
-      const now  = new Date();
-      const diff = weddingDate - now;
-      if (diff <= 0) {
-        document.getElementById('countdown').innerHTML = '<p class="countdown__done">¡Hoy es el gran día! 🥂</p>';
-        return;
-      }
-
-      const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / (1000));
-
-      document.getElementById('cd-days').textContent    = String(days).padStart(2, '0');
-      document.getElementById('cd-hours').textContent   = String(hours).padStart(2, '0');
-      document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
-      document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-
-    // ── Scroll reveal ────────────────────────────────────────
-    const revealEls = document.querySelectorAll(
-      '.section-title, .section-rule, .section-place, .section-time, .section-body, .card, .bus-row, .gift-option, .contact-item, .map-wrapper'
-    );
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('revealed');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => {
-      el.classList.add('reveal');
-      observer.observe(el);
-    });
-  </script>
+  <script type="module" src="./main.js"></script>
 </body>
+
 </html>
