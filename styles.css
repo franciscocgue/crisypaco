@@ -22,6 +22,7 @@
   --color-cream      : #f9f5f0;
   --color-sand       : #e8ddd0;
   --color-gold       : #866938;
+  --color-gold-darker: #453417;
   --color-gold-light : #d4b896;
   --color-dark       : #2a2420;
   --color-mid        : #5a4e44;
@@ -393,13 +394,13 @@ img { display: block; max-width: 100%; }
 
 .section-note {
   font-size   : 0.82rem;
-  color       : var(--color-gold);
+  color       : var(--color-gold--darker);
   text-align  : center;
   margin-top  : 2rem;
   opacity     : 0.8;
 }
 .section-note .inline-link {
-  border-bottom : 1px solid var(--color-gold);
+  border-bottom : 1px solid var(--color-gold--darker);
   padding-bottom: 1px;
 }
 
