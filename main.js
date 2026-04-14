@@ -11,7 +11,9 @@ document.querySelector(`.lang-switcher a[href*="lang=${lang}"]`)
 
 // translate
 document.querySelectorAll('[data-es]').forEach(el => {
-  el.textContent = el.dataset[lang] ?? el.dataset.es;
+  if (el.children.length === 0) {
+    el.textContent = el.dataset[lang] ?? el.dataset.es;
+  }
 });
 
 // form
