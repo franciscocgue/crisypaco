@@ -5,6 +5,23 @@ const links      = document.getElementById('nav-links');
 const scrollHint = document.querySelector('.scroll-hint');
 const heroBg     = document.querySelector('.hero__bg');
 
+const lang = new URLSearchParams(window.location.search).get('lang') || 'es';
+document.querySelector(`.lang-switcher a[href*="lang=${lang}"]`)
+  ?.classList.add('lang-active');
+
+// translate
+document.querySelectorAll('[data-es]').forEach(el => {
+  el.textContent = el.dataset[lang] ?? el.dataset.es;
+});
+
+// form
+const formLink = document.getElementById('form-id');
+if (formLink) {
+  formLink.href = lang === 'en' ? 'https://forms.gle/6D8Ed7yhX8CST3w77' : 'https://forms.gle/FxMDPfv6jdc24VwZA';
+}
+
+// https://forms.gle/uAHfKH5pxSCR4PcV7
+
 // ── Burger menu ──────────────────────────────────────────
 burger.addEventListener('click', () => {
   const isOpening = !links.classList.contains('nav-links--open');

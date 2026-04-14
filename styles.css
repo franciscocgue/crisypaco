@@ -74,6 +74,23 @@ img { display: block; max-width: 100%; }
   /* Para secciones sin imagen, basta con cambiar background-color */
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-left: 0.75rem; /* small gap from the burger */
+}
+
+.lang-switcher a {
+  text-decoration: none;
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+.lang-switcher a:hover { opacity: 1; }
+.lang-switcher a.lang-active { opacity: 1; }
+
 .hero__bg {
   position   : absolute;
   inset      : -15%;

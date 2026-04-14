@@ -23,13 +23,17 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#ceremonia">Ceremonia</a></li>
-        <li><a href="#banquete">Celebración</a></li>
-        <li><a href="#hoteles">Alojamiento</a></li>
-        <li><a href="#autobus">Autobús</a></li>
-        <li><a href="#confirmacion">Confirmación de Asistencia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#ceremonia" data-es="Ceremonia" data-en="Ceremony"></a></li>
+        <li><a href="#banquete" data-es="Celebración" data-en="Celebration"></a></li>
+        <li><a href="#hoteles" data-es="Alojamiento" data-en="Lodging"></a></li>
+        <li><a href="#autobus" data-es="Autobús" data-en="Bus"></a></li>
+        <li><a href="#confirmacion" data-es="Confirmación de Asistencia" data-en="Confirmation of Attendance"></a></li>
+        <li><a href="#contacto" data-es="Contacto" data-en="Contact"></a></li>
       </ul>
+      <div class="lang-switcher">
+        <a href="?lang=es" aria-label="Español">🇪🇸</a>
+        <a href="?lang=en" aria-label="English">🇬🇧</a>
+      </div>
     </div>
   </nav>
 
@@ -37,10 +41,11 @@
        SECCIÓN 1 — PORTADA
   ══════════════════════════════════════════════ -->
   <section class="hero section-fullscreen" id="portada">
+    
     <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">nos casamos</p>
+      <p class="hero__eyebrow" data-es="nos casamos" data-en="we are getting married"></p>
       <h1 class="hero__title">
         <span class="name">Cristina</span>
         <span class="ampersand">&amp;</span>
@@ -51,29 +56,29 @@
         <span class="divider-gem">◆</span>
         <span class="divider-line"></span>
       </div>
-      <p class="hero__date">Sábado, 19 de septiembre de 2026</p>
-      <p class="hero__place">Alicante · España</p>
+      <p class="hero__date" data-es="Sábado, 19 de septiembre de 2026" data-en="Saturday, September 19, 2026"></p>
+      <p class="hero__place" data-es="Alicante · España" data-en="Alicante · Spain"></p>
 
       <!-- Contador -->
       <div class="countdown" id="countdown">
         <div class="countdown__block">
           <span class="countdown__num" id="cd-days">--</span>
-          <span class="countdown__label">días</span>
+          <span class="countdown__label" data-es="días" data-en="days"></span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-hours">--</span>
-          <span class="countdown__label">horas</span>
+          <span class="countdown__label" data-es="horas" data-en="hours"></span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-minutes">--</span>
-          <span class="countdown__label">minutos</span>
+          <span class="countdown__label" data-es="minutos" data-en="minutes"></span>
         </div>
         <div class="countdown__sep">:</div>
         <div class="countdown__block">
           <span class="countdown__num" id="cd-seconds">--</span>
-          <span class="countdown__label">segundos</span>
+          <span class="countdown__label" data-es="segundos" data-en="seconds"></span>
         </div>
       </div>
     </div>
@@ -89,7 +94,7 @@
   ══════════════════════════════════════════════ -->
   <section class="section-content section-fullscreen" id="ceremonia">
     <div class="content-inner content-inner--narrow">
-      <h2 class="section-title">Ceremonia</h2>
+      <h2 class="section-title" data-es="Ceremonia" data-en="Ceremony"></h2>
       <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
@@ -97,7 +102,7 @@
       </div>
       <a class="section-place" target="_blank" rel="noopener noreferrer"
         href="https://www.google.com/maps/place/Parroquia+Nuestra+Se%C3%B1ora+de+Gracia/@38.344835,-0.508186,6991m/data=!3m1!1e3!4m6!3m5!1s0xd6237b2d160d3a9:0x9dbab7f96ea27013!8m2!3d38.3448031!4d-0.4876294!16s%2Fg%2F1n3dw0cx8?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D">
-        Iglesia de Nuestra Señora de Gracia · Alicante <svg
+        <span data-es="Iglesia de Nuestra Señora de Gracia · Alicante" data-en="Our Lady of Grace Parish · Alicante"></span> <svg
           style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10" fill="none"
           stroke="currentColor" stroke-width="1.2">
           <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
@@ -121,7 +126,7 @@
   ══════════════════════════════════════════════ -->
   <section class="section-content--tinted section-fullscreen section-bg-color section-alt" id="banquete">
     <div class="content-inner content-inner--narrow">
-      <h2 class="section-title">Celebración</h2>
+      <h2 class="section-title" data-es="Celebración" data-en="Celebration"></h2>
       <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
@@ -142,9 +147,9 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <p class="section-note" style="margin-top: 2rem;">
-        La celebración tendrá lugar en los jardines de la finca
+        <span data-es="La celebración tendrá lugar en los jardines de la finca" data-en="The celebration will take place in the estate's gardens"></span>
         <br />
-        💃 Aperitivo, comida y baile hasta la madrugada 🕺
+        <span data-es="💃 Aperitivo, comida y baile hasta la medianoche 🕺" data-en="💃 Cocktails, dinner, and dancing until midnight 🕺"></span>
       </p>
     </div>
   </section>
@@ -154,7 +159,7 @@
   ══════════════════════════════════════════════ -->
   <section class="section-content" id="hoteles">
     <div class="content-inner">
-      <h2 class="section-title">Alojamiento</h2>
+      <h2 class="section-title" data-es="Alojamiento" data-en="Lodging"></h2>
       <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
@@ -162,7 +167,7 @@
       </div>
 
       <p class="section-body section-body--group-label">
-        Centro de Alicante, <b>cerca de la iglesia</b>:
+        <span data-es="Centro de Alicante, " data-en="Downtown Alicante, "></span><b><span data-es="cerca de la iglesia" data-en="near the church"></span></b>:
       </p>
 
       <div class="cards">
@@ -179,7 +184,7 @@
                 fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
               </svg></a></p>
-          <p class="card__note">Código descuento 15% → 
+          <p class="card__note"><span data-es="Código descuento 15% → " data-en="15% discount code → "></span>
             <span class="copy-code"
               onclick="navigator.clipboard.writeText('BODACYF').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = 'BODACYF', 2000) })">
               BODACYF
@@ -189,7 +194,7 @@
               </svg>
             </span>
             <!-- <br> 18 al 20 septiembre -->
-            <br>🚶‍➡️→ ⛪ 9 minutos
+            <br>🚶‍➡️→ ⛪ <span data-es="9 minutos" data-en="9 minutes"></span>
           </p>
           <a class="card__link" href="tel:+34965988008">965 98 80 08</a>
         </div>
@@ -206,7 +211,7 @@
                 fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
               </svg></a></p>
-          <p class="card__note">Código descuento 15% → 
+          <p class="card__note"><span data-es="Código descuento 15% → " data-en="15% discount code → ">Código descuento 15% → </span>
             <span class="copy-code"
               onclick="navigator.clipboard.writeText('BODACYF').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = 'BODACYF', 2000) })">
               BODACYF
@@ -216,7 +221,7 @@
               </svg>
             </span>
             <!-- <br> 18 al 20 septiembre -->
-            <br>🚶‍➡️→ ⛪ 6 minutos
+            <br>🚶‍➡️→ ⛪ <span data-es="6 minutos" data-en="6 minutes"></span>
           </p>
           <a class="card__link" href="tel:+34966590700">966 59 07 00</a>
         </div>
@@ -233,7 +238,7 @@
                 fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
               </svg></a></p>
-          <p class="card__note">Código descuento 10% → 
+          <p class="card__note"><span data-es="Código descuento 10% → " data-en="10% discount code → "></span>
             <span class="copy-code"
               onclick="navigator.clipboard.writeText('26WECRYFR10').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = '26WECRYFR10', 2000) })">
               26WECRYFR10
@@ -243,7 +248,7 @@
               </svg>
             </span>
             <!-- <br> 18 al 20 septiembre -->
-            <br>🚶‍➡️→ ⛪ 7 minutos
+            <br>🚶‍➡️→ ⛪ <span data-es="7 minutos" data-en="7 minutes"></span>
           </p>
           <a class="card__link" href="tel:+34965271588">965 27 15 88</a>
         </div>
@@ -263,7 +268,7 @@
                 fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
               </svg></a></p>
-          <p class="card__note">Código descuento 5% → 
+          <p class="card__note"><span data-es="Código descuento 5% → " data-en="5% discount code → "></span>
             <span class="copy-code"
               onclick="navigator.clipboard.writeText('CRISTINA&FRANCISCO').then(() => { this.textContent = '¡Copiado! ✓'; setTimeout(() => this.textContent = 'CRISTINA&FRANCISCO', 2000) })">
               CRISTINA&FRANCISCO
@@ -272,19 +277,17 @@
                 <path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1" />
               </svg>
             </span>
-            <br>🚶‍➡️→ ⛪ 10 minutos
+            <br>🚶‍➡️→ ⛪ <span data-es="10 minutos" data-en="10 minutes"></span>
           </p>
           <a class="card__link" href="tel:+34965168181">965 16 81 81</a>
         </div>
       </div>
 
-      <p class="section-body section-body--group-label" style="margin-top: 1rem;"><a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/QFgtZrzgi4N1VDwq7">¡Más opciones! <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
+      <p class="section-body section-body--group-label" style="margin-top: 1rem;"><a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/QFgtZrzgi4N1VDwq7"><span data-es="¡Más opciones!" data-en="More options!"></span> <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
                 fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 3H2v6h6V7M7 2h2v2M9 2L5 6" />
               </svg></a></p>
-      <p class="section-body section-body--group-label" style="margin-top: 1rem;">
-        ¿Dudas? ¡Pregúntanos! 😊
-      </p>
+      <p class="section-body section-body--group-label" style="margin-top: 1rem;" data-es="¿Dudas? ¡Pregúntanos! 😊" data-en="Questions? Ask us! 😊"></p>
 
       <!-- <p class="section-body section-body--group-label" style="margin-top: 3.5rem;">
         Cerca de la <b>playa de San Juan</b> de Alicante:<br>
@@ -317,18 +320,16 @@
   ══════════════════════════════════════════════ -->
   <section class="section-content section-fullscreen  section-content--tinted" id="autobus">
     <div class="content-inner content-inner--narrow">
-      <h2 class="section-title">Autobús</h2>
+      <h2 class="section-title" data-es="Autobús" data-en="Bus"></h2>
       <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
       </div>
-      <p class="section-body">
-        🚌 Hemos organizado autobús de ida y vuelta para que podáis disfrutar sin preocuparos del coche
-      </p>
+      <p class="section-body" data-es="🚌 Hemos organizado autobús de ida y vuelta para que podáis disfrutar sin preocuparos del coche" data-en="🚌 We've arranged round-trip bus transportation so you can enjoy yourselves without worrying about driving"></p>
       <div class="bus-schedule">
         <div class="bus-row">
-          <span class="bus-label">Ida</span>
+          <span class="bus-label" data-es="Ida" data-en="Outbound"></span>
           <span class="bus-detail">
             <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/p364xgoqGC9aJP7s7">Av. Alfonso El Sabio, 27 <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
                 fill="none" stroke="currentColor" stroke-width="1.2">
@@ -346,7 +347,7 @@
           <span class="bus-time">14:15 h</span>
         </div>
         <div class="bus-row bus-row--alt">
-          <span class="bus-label">Vuelta</span>
+          <span class="bus-label" data-es="Vuelta" data-en="Return"></span>
           <span class="bus-detail">
             <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/HFfSrmD4RAXc5MF4A">Finca La Torreta <svg style="width:0.8em;height:0.8em;vertical-align:-0.1em;opacity:0.7" viewBox="0 0 10 10"
               fill="none" stroke="currentColor" stroke-width="1.2">
@@ -368,31 +369,9 @@
           <span class="bus-time">04:00 h</span>
         </div> -->
       </div>
-      <p class="section-note">Por favor, confirmad en el formulario si necesitaréis autobús</p>
+      <p class="section-note" data-es="Por favor, confirmad en el formulario si necesitaréis autobús" data-en="Please indicate on the form if you will need a bus"></p>
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════════════
-       SECCIÓN 6 — GUARDERÍA
-  ══════════════════════════════════════════════ -->
-  <!-- <section class="section-content section-fullscreen" id="dresscode">
-    <div class="content-inner content-inner--narrow">
-      <h2 class="section-title">Guardería</h2>
-      <div class="section-rule">
-        <span class="rule-line"></span>
-        <span class="rule-gem">◆</span>
-        <span class="rule-line"></span>
-      </div>
-      <p class="section-body section-body--large">
-        ¡Nos encantan los niños! Y también están invitados
-      </p>
-      <p class="section-body">
-        Dispondremos de servicio de guardería para que puedan estar atendidos y entretenidos durante la
-        celebración<br />
-
-      </p>
-    </div>
-  </section> -->
 
 
   <!-- ══════════════════════════════════════════════
@@ -400,21 +379,21 @@
   ══════════════════════════════════════════════ -->
   <section class="section-content section-content--tinted" id="confirmacion">
     <div class="content-inner content-inner--narrow">
-      <h2 class="section-title">Confirmación de Asistencia</h2>
+      <h2 class="section-title" data-es="Confirmación de Asistencia" data-en="Confirmation of Attendance"></h2>
       <div class="section-rule">
         <span class="rule-line"></span>
         <span class="rule-gem">◆</span>
         <span class="rule-line"></span>
         </div>
         <p class="section-body">
-          ¡Nos encantará veros en nuestra boda!
+          <span data-es="¡Nos encantará veros en nuestra boda!" data-en="We'd love to see you at our wedding!"></span>
         
           <br />
-          Por favor, confirmad vuestra asistencia en el siguiente link
+          <span data-es="Por favor, confirmad vuestra asistencia en el siguiente link" data-en="Please confirm your attendance via the link below"></span>
           <br />
           <br />
         
-          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf78XQq73uXEYw-JgR3FUo57OpeCQL9uBaGbAYCMMQUhR-CzQ/viewform" target="_blank" rel="noopener noreferrer">Confirmar Asistencia</a>
+          <a id="form-id" class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf78XQq73uXEYw-JgR3FUo57OpeCQL9uBaGbAYCMMQUhR-CzQ/viewform" target="_blank" rel="noopener noreferrer" data-es="Confirmar Asistencia" data-en="Confirm Attendance"></a>
         
         </p>
         <!-- <div class="contact-grid">
